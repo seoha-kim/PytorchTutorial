@@ -1,2 +1,2 @@
 # PytorchTutorial
-Pytorch Tutorial with <Pytorch First step>
+Pytorch Tutorial with Pytorch First step
