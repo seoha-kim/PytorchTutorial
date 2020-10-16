@@ -95,7 +95,7 @@ total = 0
 with torch.no_grad():
     for image, label in test_loader:
         x = image.to(device)
-        y_ = image.to(device)
+        y_ = label.to(device)
         output = model.forward(x)
 
         _, output_index = torch.max(output, 1)
