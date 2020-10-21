@@ -51,8 +51,8 @@ class RNN(nn.Module):
     def init_hidden(self):
         return torch.zeros(1, self.hidden_size)
 
-rnn = RNN(n_letters, N_HIDDEN, n_letters)
 
+rnn = RNN(n_letters, N_HIDDEN, n_letters)
 loss_func = nn.MSELoss()
 optimizer = torch.optim.Adam(rnn.parameters(), lr=LR)
 one_hot = torch.from_numpy(string_to_onehot(string)).type_as(torch.FloatTensor())
